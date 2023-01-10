@@ -1,10 +1,10 @@
 import string
 import random
 
-characters = (string.ascii_letters + string.digits + "!@#$%^&*()")
+characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 
 def generate_password():
-    password_length = int(input("How many characters would you like in your password?"))
+    password_length = int(input("How many characters would you like in your password? "))
 
     random.shuffle(characters)
 
